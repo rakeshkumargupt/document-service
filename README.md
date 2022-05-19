@@ -1,12 +1,10 @@
 # Moneyware Ltd. Digital Document Indexing & Archiving Service
 
----
 [![Build Status](https://travis-ci.org/codecentric/springboot-sample-app.svg?branch=master)](https://travis-ci.org/codecentric/springboot-sample-app)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## Purpose
 
----
 This service using [Spring Boot](http://projects.spring.io/spring-boot/), [JPA](), [Hibernate](), [Security]() and [PostgreSQL](https://www.postgresql.org/download/) to fulfill below requirements.
 
 1. *Upload of scanned documents and classified as Document Type (Personal, Address, ..). 
@@ -31,7 +29,6 @@ This service using [Spring Boot](http://projects.spring.io/spring-boot/), [JPA](
 
 ## Feature & functionality supported 
 
-----
 1. We have exposed POST API to upload documents which internally saves in database.
 2. Scheduler job is configured to run every hour.
 3. This will read the data from the DB, Generate the original & index file for documents for completed status.
@@ -43,7 +40,6 @@ This service using [Spring Boot](http://projects.spring.io/spring-boot/), [JPA](
 
 ## Requirements
 
----
 For building and running the application you need:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -52,7 +48,6 @@ For building and running the application you need:
 
 ## Running the application locally
 
----
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.moneyware.bank.documentservice.DocumentServiceApplication` class from your IDE.
 
 Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
@@ -63,7 +58,6 @@ mvn spring-boot:run
 
 ## Document Service API's
 
----
 Once application started, Below is the API specification for same.
 
 ####  POST - /document-service/documents
