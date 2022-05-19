@@ -22,7 +22,7 @@ public class CompletedDocumentsFileGenerator {
     private final DocumentRepository documentRepository;
     private final FileUtil fileUtil;
 
-    @Scheduled(cron = "*/59 * * * * *")
+    @Scheduled(cron = "0 0 * * * *")
     @Transactional
     public void process() {
         log.info("Scheduler started: {}", this.getClass().getSimpleName());
